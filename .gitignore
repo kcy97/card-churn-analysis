@@ -208,3 +208,25 @@ __marimo__/
 
 # 데이터 파일
 *.csv
+
+.env
+.env.*
+!.env.example
+
+# 데이터는 README 지시대로 각자 받게 한다 (Kaggle 재배포 회피 + 용량)
+data/*.csv
+
+# 생성물
+models/*.pkl
+models/*.json
+*.db
+out/
+__pycache__/
+.ipynb_checkpoints/
+
+# 이 프로젝트와 무관한 파일
+ecommerce_2years_data.csv
+sabermetrics_2024.csv
+top_insta_influencers_data.csv
+uplift_marketing_dataset.csv
+webtoon.csv

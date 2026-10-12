@@ -14,8 +14,8 @@ import time
 load_dotenv()
 
 # ── 모델 로드 ──────────────────────────────────────────────────
-model = joblib.load('churn_model.pkl')
-with open('model_columns.json', 'r') as f:
+model = joblib.load('models/churn_model.pkl')
+with open('models/model_columns.json', 'r') as f:
     model_columns = json.load(f)
 
 # ── DB 연결 ───────────────────────────────────────────────────

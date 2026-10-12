@@ -16,8 +16,8 @@ st.set_page_config(page_title="카드사 고객 이탈 모니터링", page_icon=
 # ── 모델 로드 ──────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model = joblib.load('churn_model.pkl')
-    with open('model_columns.json', 'r') as f:
+    model = joblib.load('models/churn_model.pkl')
+    with open('models/model_columns.json', 'r') as f:
         columns = json.load(f)
     return model, columns
 
